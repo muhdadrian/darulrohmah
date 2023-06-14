@@ -89,18 +89,17 @@ body {
     padding: 0 2%;
   }
 
-  .hadith {
-    text-align: justify;
-    height: 18rem;
-    padding: 0 2%;
-    /* background-color: aqua; */
-  }
-
   .flex-item {
     flex-basis: 100%;
     margin: 10px;
     padding: 10px;
     text-align: center;
+  }
+
+  .container-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   /* Tentang */
