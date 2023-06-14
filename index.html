@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pertubuhan Darul Rohmah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+
+    <!-- Mobile CSS -->
+
+    <link rel="stylesheet" href="css/mobile.css" />
+
+    <!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Date -->
+    <div class="date">
+      <p><span id="current-date"></span></p>
+      <!-- Islamic Date -->
+      <p class="hijrah"><span id="islamicDate"></span></p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar-main">
+      <div class="navbar">
+        <img id="header-image" src="img/logo.jpeg" class="logo" alt="" />
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="pengajian.html" class="nav-item">Pengajian</a></li>
+          <li><a href="tentang.html" class="nav-item">Tentang</a></li>
+          <li><a href="carta.html" class="nav-item">Carta</a></li>
+          <li><a href="blog.html" class="nav-item">Blog</a></li>
+          <li><a href="hubungi.html" class="nav-item">Hubungi</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider">
+      <a href=""
+        ><img src="img2/iftar.jpeg" class="active" />
+        <div class="caption">Majlis Iftar Jamaie.</div></a
+      >
+      <a href=""
+        ><img src="img2/suasana.jpeg" />
+        <div class="caption">Suasana Pengajian.</div></a
+      >
+      <a href=""
+        ><img src="img2/yatim.jpg" />
+        <div class="caption">Bantuan kepada anak yatim dan piatu.</div></a
+      >
+      <div class="slider-buttons">
+        <span class="prev" onclick="slideLeft()">&#10094;</span>
+        <span class="next" onclick="slideRight()">&#10095;</span>
+      </div>
+    </div>
+
+    <!-- Hadis -->
+    <div class="hadis">
+      <p class="sub-hadis">
+        Humaid bin Abdurrahman r.a mengatakan bahawa dia mendengar Mu'awiyah
+        berkhutbah, katanya, "Dia mendengar Rasulullah SAW bersabda:
+        'Barangsiapa dikehendaki Allah akan beroleh kebaikan, diberi-Nya
+        pengertian dalam hal agama. Saya hanya membahagi-bahagikan, sedang yang
+        memberi ialah Allah<sup>1</sup>
+        selama (umat Islam) berdiri teguh di atas agama Allah, tidak satu pun
+        penentang-penentang mereka yang sanggup membinasakan mereka sampai
+        kiamat datang.' " -Shahih Bukhari Jilid 1 (No. 58).
+        <br />
+        <br />
+      </p>
+      <p class="sub-sub-hadis">
+        1) Nabi hanya membahagi-bahagikan (menyiarkan, menyampaikan) ilmu;
+        sedang yang memasukkan ilmu itu ke dalam hati manusia ialah Allah.
+      </p>
+    </div>
+
+    <!-- Top Slider -->
+    <div class="carousel">
+      <div class="filmstrip">
+        <img src="img/yatim.jpeg" />
+        <img src="img/khidmat.jpeg" />
+        <img src="img/guru.jpeg" />
+        <img src="img/wanita.jpeg" />
+        <img src="img/poster.jpeg" />
+        <img src="img/yatim.jpeg" />
+        <img src="img/khidmat.jpeg" />
+        <img src="img/guru.jpeg" />
+        <img src="img/wanita.jpeg" />
+        <img src="img/poster.jpeg" />
+        <img src="img/yatim.jpeg" />
+        <img src="img/khidmat.jpeg" />
+        <img src="img/guru.jpeg" />
+        <img src="img/wanita.jpeg" />
+        <img src="img/poster.jpeg" />
+      </div>
+      <!-- <button class="prev">Previous</button>
+      <button class="next">Next</button> -->
+    </div>
+
+    <!-- Hadis Kedua-->
+    <div class="hadis-dua">
+      <p class="sub-hadis-dua">
+        Dari Abu Syaibah r.a dari Nabi SAW, sabdanya: "Setiap perbuatan baik
+        (ma'ruf) adalah sedekah." - Shahih Muslim Jilid II (No. 958)
+      </p>
+    </div>
+
+    <!-- Bottom Container -->
+
+    <div class="flex-container">
+      <div class="flex-item">
+        <img class="container-img" src="img2/khidmat.jpg" alt="Image 1" />
+        <h6>Baba Li Sekam</h6>
+        <p>
+          Ahli Khidmat Pertubuhan Darul Rohmah dalam Pengajian bersama Baba Li
+          Sekam yang diadakan pada 26 dan 27 Januari 2019.
+        </p>
+      </div>
+      <div class="flex-item">
+        <img class="container-img" src="img2/wanita.jpg" alt="Image 2" />
+        <h6>Kitab Al-Jauhar Al-Mauhub</h6>
+        <p>
+          Pengajian kitab khusus untuk muslimat yang dibimbing oleh Ustazah Hjh.
+          Junaidah Awang pada 24 dan 25 Ogos 2019.
+        </p>
+      </div>
+      <div class="flex-item">
+        <img class="container-img" src="img2/yatim.jpg" alt="Image 3" />
+        <h6>Bantuan anak yatim dan piatu</h6>
+        <p>
+          Pertubuhan Darul Rohmah menyampaikan amanah yang disalurkan melalui
+          tabung bantuan anak yatim dan piatu pada Jun 2017.
+        </p>
+      </div>
+      <div class="flex-item">
+        <img class="container-img" src="img2/haul.jpeg" alt="Image 4" />
+        <h6>Majlis Haul</h6>
+        <p>
+          Majlis Haul Imam Al-Haddad yang diadakan di Pertubuhan Darul Rohmah
+          pada Ogos 2016.
+        </p>
+      </div>
+      <div class="flex-item">
+        <img class="container-img" src="img2/iftar.jpeg" alt="Image 5" />
+        <h6>Iftar</h6>
+        <p>
+          Majlis Iftar Jamaie dan sumbangan kepada anak yatim dan ibu tunggal
+          yang diadakan pada June 2019.
+        </p>
+      </div>
+      <div class="flex-item">
+        <img class="container-img" src="img2/suasana.jpeg" alt="Image 6" />
+        <h6>Suasana Pengajian</h6>
+        <p>
+          Pelajar dari pelbagai golongan sedang menekuni pengajian Kitab Al
+          Mulhah Fi Iktiqad Ahl Al-Haq, Karya Syeikh Al Imam Izz Ad-Din pada 26
+          Jan 2019.
+        </p>
+      </div>
+    </div>
+
+    <!-- Empty div -->
+    <div class="empty"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="socials">
+        <a href="https://web.facebook.com/MajlistalimDarulRohmah" target="_blank"</a><img src="icon/facebook.png" alt=""></a>
+      </div>
+  
+      <div class="footer-nav">
+        <a href="#" id="#home" class="links">Home</a>
+        <a href="pengajian.html" id="#blog" class="links">Pengajian</a>
+        <a href="tentang.html" id="#blog" class="links">Tentang</a>
+        <a href="carta.html" id="#blog" class="links">Carta</a>
+        <a href="blog.html" id="#blog" class="links">Blog</a>
+        <a href="hubungi.html" id="#blog" class="links">Hubungi</a>
+      </div>
+      <div class="credit">
+        <p>Pertubuhan Darul Rohmah | &copy; 2023.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
