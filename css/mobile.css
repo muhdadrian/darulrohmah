@@ -84,6 +84,11 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
   }
 
+  .caption {
+    padding: 2.2rem 0;
+    background-color: #32cd32;
+  }
+
   .hadis {
     text-align: justify;
     padding: 0 2%;
