@@ -22,8 +22,8 @@ body {
 
 /* Date */
 .date {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: right; */
   /* background-color: aqua; */
   padding: 0 5%;
   color: #e0115f;
@@ -38,6 +38,7 @@ body {
 
 .hijrah {
   text-align: center;
+  opacity: 0;
 }
 
 .navbar {
